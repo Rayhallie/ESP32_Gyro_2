@@ -1,6 +1,4 @@
 #include <Arduino.h>
-
-
 #include "BMI088.h"
 
 #define I2C_Freq 100000
@@ -11,7 +9,6 @@ float ax = 0, ay = 0, az = 0;
 float gx = 0, gy = 0, gz = 0;
 int16_t temp = 0;
 BMI088 bmi088( BMI088_ACC_ADDRESS, BMI088_GYRO_ADDRESS );
-
 
 void setup(void) {
     Wire.begin();
